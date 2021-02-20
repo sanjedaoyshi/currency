@@ -1,0 +1,22 @@
+
+body{
+    background-color: lightgray;
+}
+
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 850;
+}
+
+.convert_currency{
+    text-align: center;
+}
+
+.group_form_2{
+    object-position: center;
+}
+.container{
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Currency Converter</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="heading">
+  <div class="container">
+  <br><br><br><br>
+   <h2>Currency Converter</h2>
+   <label class="convert_currency" for="v1">Input the currency</label>
+   <div>
+     <div class="group_form">
+     
+        <input type="number" class="form-control" id="v1" oninput="convert()"/>
+     </div>
+     <div class="group_form_2">
+        <select class="form-control" id="sel1" onchange="convert()" required>
+          <option value="1">PLN</option>
+          <option value="2">EUR</option>
+          <option value="3">USD</option>
+        </select>
+      </div>
+      <div class="group_form_2">
+        <label>convert to</label>
+        <select class="form-control" onchange="convert()" id="sel2" required>
+          <option value="1">PLN</option>
+          <option value="2">EUR</option>
+          <option value="3">USD</option>
+        </select>
+      </div>  
+      <!-- <button class="calculate_btn" onclick="convert()">Result</button> -->
+      <h4 class="n1" id="result"></h4>
+    </div>
+    <div class="result">
+      <p>
+        <span class="given-amount"></span> 
+        <span class="base-currency"></span>
+        <span class="final-result"></span> 
+        <span class="second-currency"></span>
+      </p>
+    </div>
+  </div> 
+</div>
+<script src="convert.js">
+</script>
+</body>
+
+</html>
